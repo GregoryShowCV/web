@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<p>@import '_Variables.scss';</p>
+    
+    <div id="standard"></div>
+
+    @media (max-width:1359px){
+    <div id="m1359px"></div>
+    }
+    @media (max-width:1279px) {
+    <div id="m1279px"></div>
+    }
+    @media (max-width:1124px) {
+    <div id="m1124px"></div>
+    }
+    @media (max-width:1079px) {
+    <div id="m1079px"></div>
+    }
+    @media (max-width:1023px) {
+    <div id="m1023px"></div>
+    }
+    @media (max-width:959px) {
+    <div id="m959px"></div>
+    }
+    @media (max-width:799px) {
+    <div id="m799px"></div>
+    }
+    @media (max-width:749px) {
+    <div id="m749px"></div>
+    }
+
+    @media (max-width:639px) {
+    <div id="m639px"></div>
+    }
+
+    @media (max-width:539px) {
+    <div id="m539px"></div>
+    }
+
+    @media (max-width:479px) {
+    <div id="m479px"></div>
+    }
+
+    @media (max-width:399px) {
+    <div id="m399px"></div>
+    }
+
+
+
+</body>
+
+
+<script>
+    // Function to fetch and display the file content
+    const standard = document.getElementById("standard")
+    const m1359px = document.getElementById("m1359px")
+    const m1279px = document.getElementById("m1279px")
+    const m1124px = document.getElementById("m1124px")
+    const m1079px = document.getElementById("m1079px")
+    const m1023px = document.getElementById("m1023px")
+    const m959px = document.getElementById("m959px")
+    const m799px = document.getElementById("m799px")
+    const m749px = document.getElementById("m749px")
+    const m639px = document.getElementById("m639px")
+    const m539px = document.getElementById("m539px")
+    const m479x = document.getElementById("m479px")
+    const m399px = document.getElementById("m399px")
+
+
+    function fetchFileContent(filePath) {
+        fetch(filePath)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.text();
+            })
+            .then(data => {
+
+                standard.innerHTML = data.replace(/-mResponsivepx/g, '');
+                m1359px.innerHTML = data.replace(/mResponsivepx/g, 'm1359px');
+                m1279px.innerHTML = data.replace(/mResponsivepx/g, 'm1279px');
+                m1124px.innerHTML = data.replace(/mResponsivepx/g, 'm1124px');
+                m1079px.innerHTML = data.replace(/mResponsivepx/g, 'm1079px');
+                m1023px.innerHTML = data.replace(/mResponsivepx/g, 'm1023px');
+                m959px.innerHTML = data.replace(/mResponsivepx/g, 'm959px');
+                m799px.innerHTML = data.replace(/mResponsivepx/g, 'm799px');
+                m749px.innerHTML = data.replace(/mResponsivepx/g, 'm749px');
+                m639px.innerHTML = data.replace(/mResponsivepx/g, 'm639px');
+                m539px.innerHTML = data.replace(/mResponsivepx/g, 'm539px');
+                m479x.innerHTML = data.replace(/mResponsivepx/g, 'm479px');
+                m399px.innerHTML = data.replace(/mResponsivepx/g, 'm399px');
+
+            })
+            .catch(error => {
+                console.error('There has been a problem with your fetch operation:', error);
+            });
+    }
+
+
+
+
+    // Call the function with the path to your file
+    fetchFileContent('_Standard.scss');
+</script>
+
+</html>
