@@ -373,21 +373,18 @@ navOpenClose.addEventListener('click', function() {
 
     
 
-    function checkScreenSize() {
-        BrochureImageTitles.forEach(function(title) {
-            if (window.innerWidth < 1359) {
-                // Apply styles or behaviors for small screens
-                title.style.color = 'lightblue';
-            } else {
-                // Apply styles or behaviors for larger screens
-                title.style.color = 'blue';
-            }
-        });
-    }
+    // function checkScreenSize() {
+    //     BrochureImageTitles.forEach(function(title) {
+    //         if (window.innerWidth < 1359) {
+    //             title.style.color = 'lightblue';
+    //         } else {
+    //             title.style.color = 'blue';
+    //         }
+    //     });
+    // }
     
-    // Run the function on load and on window resize
-    window.addEventListener('load', checkScreenSize);
-    window.addEventListener('resize', checkScreenSize);
+    // window.addEventListener('load', checkScreenSize);
+    // window.addEventListener('resize', checkScreenSize);
 
 
   translateButtons.forEach((translateButton) => {
