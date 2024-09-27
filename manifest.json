@@ -1,0 +1,22 @@
+{
+    "name": "Gregory's Resumen",
+    "short_name": "Gregory's Resumen",
+    "lang": "es",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#00001f",
+    "theme_color": "#00001f",
+    "icons": [
+        {
+            "src": "/img/CVLogo64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/CVLogo.png",
+            "sizes": "144x144", 
+            "type": "CVLogo144.png"
+        }
+    ]
+}
