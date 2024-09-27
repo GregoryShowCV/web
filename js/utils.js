@@ -18,6 +18,9 @@ const translateButtons = document.querySelectorAll('.translate-button');
 const scrollBtn=  document.getElementById('scroll-btn-sign');
 
 
+const videoKnoewlegdeExtras = document.querySelectorAll('.video-knoewlegde-extras');
+
+
 
 const Title = document.querySelector('title');
 const MenuContentButtons = document.querySelectorAll('.menu-button a');
@@ -168,6 +171,9 @@ function videoChange(index)
 }
 
 });
+
+
+videoKnoewlegdeExtras[0].play();
 
 
 
