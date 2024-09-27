@@ -368,23 +368,35 @@ navOpenClose.addEventListener('click', function() {
     });
 
 
+    function checkScreenSize() {
+        if (window.innerWidth < 959) {
 
+        MenuContentButtons.forEach(function(MenuContentButton) {
+                
+                MenuContentButton.addEventListener('click',function(){
+                    nav.classList.remove('nav-animation-mobile-open')
+                    nav.classList.add('nav-animation-mobile-close')
+             
+                    navButton.classList.remove('nav-animation-mobile-open-button')
+                    navButton.classList.add('nav-animation-mobile-close-button')
 
+                })
+                
+            });
 
+            NavLogo.addEventListener('click',function(){
+                nav.classList.remove('nav-animation-mobile-open')
+                nav.classList.add('nav-animation-mobile-close')
+         
+                navButton.classList.remove('nav-animation-mobile-open-button')
+                navButton.classList.add('nav-animation-mobile-close-button')
+            })
+                
+            } 
+    }
     
-
-    // function checkScreenSize() {
-    //     BrochureImageTitles.forEach(function(title) {
-    //         if (window.innerWidth < 1359) {
-    //             title.style.color = 'lightblue';
-    //         } else {
-    //             title.style.color = 'blue';
-    //         }
-    //     });
-    // }
-    
-    // window.addEventListener('load', checkScreenSize);
-    // window.addEventListener('resize', checkScreenSize);
+    window.addEventListener('load', checkScreenSize);
+    window.addEventListener('resize', checkScreenSize);
 
 
   translateButtons.forEach((translateButton) => {
@@ -450,16 +462,6 @@ navOpenClose.addEventListener('click', function() {
         formTextMessage.textContent =  data[attr].MessageForm[MessageFormM];
         FooterCl[0].innerHTML =  data[attr].FooterCl0
         FooterCl[2].innerHTML =  data[attr].FooterCl2
-
-
-
-
-        
-   
-
-
-
-
             
     });
 });
