@@ -18,7 +18,10 @@ const translateButtons = document.querySelectorAll('.translate-button');
 const scrollBtn=  document.getElementById('scroll-btn-sign');
 
 
-const videoKnoewlegdeExtras = document.querySelectorAll('.video-knoewlegde-extras');
+const brochureVideo = document.querySelector('.brochure-video');
+
+
+
 
 
 
@@ -133,6 +136,10 @@ brochureImagePhotoHovers.forEach((brochureImagePhotoHover, index) => {
 });
 
 
+videoKnowLedgeExtras[0].play();
+brochureVideo.play();
+
+
 triangleTexts.forEach((triangleText, index) => {
     triangleText.addEventListener('mouseover', () => {
         if (lastHoverElementTriangleText && lastHoverElementTriangleText !== triangleText) {
@@ -163,9 +170,12 @@ function videoChange(index)
         if (indexF === index) {
             videoKnowLedgeExtra.classList.remove('display-none');
             videoKnowLedgeExtra.classList.add('display-block');
+            videoKnowLedgeExtra.play()
+
         } else {
             videoKnowLedgeExtra.classList.add('display-none');
             videoKnowLedgeExtra.classList.remove('display-block');
+            videoKnowLedgeExtra.pause()
         }
     })
 }
@@ -173,7 +183,6 @@ function videoChange(index)
 });
 
 
-videoKnoewlegdeExtras[0].play();
 
 
 
