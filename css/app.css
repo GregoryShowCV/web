@@ -355,11 +355,6 @@ margin-bottom: 50px;*/
     margin-bottom: 0px; }
   100% {
     margin-bottom: 50px; } }
-@keyframes brochureImageTitlAnimation {
-  0% {
-    color: #2c2c2c; }
-  100% {
-    color: #252525; } }
 @keyframes brochureTitleAnimation {
   0% {
     opacity: 100%; }
@@ -654,9 +649,6 @@ margin-bottom: 50px;*/
       padding: 10px 0px 10px 0px;
       display: flex;
       justify-content: center; } }
-@media screen and (max-width: 1359px) {
-  .brochure-image-title {
-    color: white !important; } }
 @media (max-width: 479px) {
   #scroll-btn {
     bottom: 50px !important;
