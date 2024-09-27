@@ -370,6 +370,16 @@
     justify-content: center;
 }
 
+
+.margin-0-auto-mResponsivepx {
+    margin: 0 auto;
+}
+
+
+.margin-0-auto-important-mResponsivepx {
+    margin: 0 auto !important;
+}
+
 .margin-0-mResponsivepx {
     margin: 0px;
 }
@@ -452,8 +462,9 @@
     margin-top: 60px;
 }
 
-
-
+.padding-0-mResponsivepx {
+    padding: 0px;
+}
 
 .padding-1-mResponsivepx {
     padding: 8px
@@ -468,6 +479,27 @@
 }
 
 .padding-4-mResponsivepx {
+    padding: 30px;
+}
+
+
+.padding-0-important-mResponsivepx {
+    padding: 0px !important;
+}
+
+.padding-1-important-mResponsivepx {
+    padding: 8px
+}
+
+.padding-2-important-mResponsivepx {
+    padding: 10px;
+}
+
+.padding-3-important-mResponsivepx {
+    padding: 15px;
+}
+
+.padding-4-important-mResponsivepx {
     padding: 30px;
 }
 
