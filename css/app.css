@@ -654,7 +654,10 @@ margin-bottom: 50px;*/
       font-weight: 700px !important;
       padding: 10px 0px 10px 0px;
       display: flex;
-      justify-content: center; } }
+      justify-content: center; }
+
+  .brochure-image-title {
+    color: white !important; } }
 @media (max-width: 479px) {
   #scroll-btn {
     bottom: 50px !important;
