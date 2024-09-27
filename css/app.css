@@ -631,9 +631,11 @@ margin-bottom: 50px;*/
       position: relative !important; }
       .brochure-frame-gallery .brochure-gallery .brochure-image-photo .brochure-image-title {
         font-size: 15px !important;
+        color: white !important;
         bottom: 109% !important;
         z-index: 1000;
         font-weight: bold;
+        background: black;
         width: 110%;
         transform: skewY(2deg) rotate(0deg) !important; }
 
