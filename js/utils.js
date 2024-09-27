@@ -17,6 +17,8 @@ const navButton=  document.getElementById('nav-open-button');
 const translateButtons = document.querySelectorAll('.translate-button');
 const scrollBtn=  document.getElementById('scroll-btn-sign');
 
+
+
 const Title = document.querySelector('title');
 const MenuContentButtons = document.querySelectorAll('.menu-button a');
 const NavLogo = document.querySelector('#logo a');
@@ -366,6 +368,26 @@ navOpenClose.addEventListener('click', function() {
     });
 
 
+
+
+
+    
+
+    function checkScreenSize() {
+        BrochureImageTitles.forEach(function(title) {
+            if (window.innerWidth < 1359) {
+                // Apply styles or behaviors for small screens
+                title.style.color = 'lightblue';
+            } else {
+                // Apply styles or behaviors for larger screens
+                title.style.color = 'blue';
+            }
+        });
+    }
+    
+    // Run the function on load and on window resize
+    window.addEventListener('load', checkScreenSize);
+    window.addEventListener('resize', checkScreenSize);
 
 
   translateButtons.forEach((translateButton) => {
