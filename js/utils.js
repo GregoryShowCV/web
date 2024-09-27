@@ -292,12 +292,12 @@ navOpenClose.addEventListener('click', function() {
     
     // counterNavOpenClose +=1 ;
     // if(counterNavOpenClose==1)
-    //   {
        nav.classList.remove('nav-animation-mobile-open')
        nav.classList.add('nav-animation-mobile-close')
 
        navButton.classList.remove('nav-animation-mobile-open-button')
        navButton.classList.add('nav-animation-mobile-close-button')
+
     //   }
     // else
     // {
@@ -314,11 +314,12 @@ navOpenClose.addEventListener('click', function() {
 
   navButton.addEventListener('click', function() {
  
-        nav.classList.remove('nav-animation-mobile-close')
         nav.classList.add('nav-animation-mobile-open')
+        nav.classList.remove('nav-animation-mobile-close')
 
-        navButton.classList.remove('nav-animation-mobile-close-button')
         navButton.classList.add('nav-animation-mobile-open-button')
+        navButton.classList.remove('nav-animation-mobile-close-button')
+
 
   });
 
