@@ -115,7 +115,7 @@ menu {
         width: 400px;
         height: 100%;
         position: fixed;
-        right: 0px;
+        right: -400px;
         z-index: 10000;
         background-color: $background-primary;
 
@@ -166,7 +166,7 @@ menu {
                     position: fixed;
                     background: $background-primary;
                     top: 30px;
-                    right: -400px;
+                    right: 35px;
 
                     #nav-open-button-body {
                         position: relative;
@@ -240,6 +240,10 @@ menu {
 
     @keyframes navAnimationMobileClose {
 
+        0% {
+            right: 0px;
+        }
+
         100% {
             right: -400px;
         }
@@ -268,6 +272,9 @@ menu {
 
     @keyframes navAnimationMobileCloseButton {
 
+        0% {
+            right: -400px;
+        }
         100% {
             right: 35px;
         }
@@ -995,7 +1002,7 @@ menu {
                     color: white !important;
                     bottom: 109% !important;
                     z-index: 1000;
-                    font-weight: 700;
+                    font-weight: bold;
                     background: black;
                     width: 110%;
                     transform: skewY(2deg) rotate(0deg) !important;
